@@ -1,24 +1,9 @@
-# Portfolio V3 — Muchamad Gilang Dwi Saputra, S.Kom.
+# Muchamad Gilang Dwi Saputra, S.Kom. — Portfolio
 
-## Main files
-- index.html
-- style.css
-- script.js
+Portfolio website with the actual provided profile, internship, project, leadership, and certificate images already placed in the `assets` folder.
 
-## Image folders
-- assets/profile/profile.jpg
-- assets/experience/internship-1.jpg
-- assets/experience/internship-2.jpg
-- assets/experience/internship-3.jpg
-- assets/projects/employee-system-1.jpg
-- assets/projects/employee-system-2.jpg
-- assets/projects/employee-system-3.jpg
-- assets/projects/employee-system-4.jpg
-- assets/projects/employee-system-5.jpg
-- assets/projects/employee-system-6.jpg
-- assets/leadership/workshop-leader.jpg
+## Important
+Upload the **contents** of this folder to the root of:
+`muchamad-gilang-dwi-saputra.github.io`
 
-The portfolio intentionally does NOT include a Cum Laude section.
-
-## GitHub Pages
-Upload the files while preserving the folder structure. GitHub Pages should publish from the main branch root.
+Do not upload the ZIP itself to GitHub Pages.

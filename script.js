@@ -23,3 +23,11 @@ const close=()=>{lightbox.classList.remove("active");lightbox.setAttribute("aria
 closeLightbox?.addEventListener("click",close);
 lightbox?.addEventListener("click",e=>{if(e.target===lightbox)close()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
+
+document.querySelectorAll(".certificate-photo img").forEach(img=>{
+  img.addEventListener("click",()=>{
+    const lb=document.getElementById("lightbox");
+    const lbImg=document.getElementById("lightboxImage");
+    if(lb && lbImg){lbImg.src=img.src;lb.setAttribute("aria-hidden","false");lb.classList.add("active");}
+  });
+});
