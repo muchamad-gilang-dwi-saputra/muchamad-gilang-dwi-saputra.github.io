@@ -1,19 +1,22 @@
-# Muchamad Gilang Dwi Saputra — Portfolio V2
+# Muchamad Gilang Dwi Saputra, S.Kom. — Portfolio V3
 
-Portfolio pribadi berbasis HTML, CSS, dan JavaScript untuk GitHub Pages.
+Professional portfolio focused on:
+- Network Engineering
+- Network Security
+- Cybersecurity
 
-## File
-- `index.html` — struktur website
-- `style.css` — desain, animasi, dan responsive layout
-- `script.js` — interaksi, typing effect, particles, scroll reveal
-- `README.md` — dokumentasi
+## Update this portfolio on GitHub Pages
+1. Open repository `muchamad-gilang-dwi-saputra.github.io`
+2. Upload/replace `index.html`, `style.css`, `script.js`
+3. Upload the entire `assets` folder
+4. Commit changes
+5. Wait for GitHub Pages deployment
 
-## Cara update
-Upload/replace file di repository GitHub Pages:
-`muchamad-gilang-dwi-saputra.github.io`
-
-Website:
-https://muchamad-gilang-dwi-saputra.github.io/
-
-## Catatan
-Project yang masih berstatus PLANNED/BUILDING sebaiknya diperbarui ketika project asli sudah tersedia di GitHub.
+## Main sections
+- About
+- IT Internship Experience
+- Employee Management System
+- Leadership Experience
+- Certificates & Achievements
+- Documentation
+- Contact

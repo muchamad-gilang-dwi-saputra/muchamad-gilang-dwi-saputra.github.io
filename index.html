@@ -1,128 +1,239 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio Muchamad Gilang Dwi Saputra — Informatics Student focused on Networking, Cybersecurity, and Python.">
-<meta name="theme-color" content="#07111f">
-<title>Muchamad Gilang Dwi Saputra | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Muchamad Gilang Dwi Saputra, S.Kom. — Network Engineering, Network Security, and Cybersecurity." />
+  <title>Muchamad Gilang Dwi Saputra, S.Kom. | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="loader"><div class="loader-mark">MG</div><p>INITIALIZING PORTFOLIO...</p></div>
-<canvas id="particles"></canvas>
-<div class="noise"></div>
-<div class="cursor-glow"></div>
+  <div class="cursor-glow"></div>
+  <div class="noise"></div>
 
-<header id="top">
-  <a class="logo" href="#home"><span>MG</span><i>.</i></a>
-  <button class="menu-btn" aria-label="Buka menu"><span></span><span></span><span></span></button>
-  <nav>
-    <a href="#about">About</a><a href="#skills">Skills</a><a href="#building">Building</a>
-    <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
-  </nav>
-  <a class="nav-cta" href="#contact">Let's Connect <b>↗</b></a>
-</header>
-
-<main>
-<section id="home" class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-copy reveal">
-    <div class="availability"><span></span> OPEN TO LEARNING & OPPORTUNITIES</div>
-    <p class="kicker">HELLO, I'M</p>
-    <h1>Muchamad<br><em>Gilang Dwi</em><br>Saputra<span>.</span></h1>
-    <div class="role">INFORMATICS STUDENT <i>×</i> <span id="typing"></span></div>
-    <p class="intro">Building practical skills and documented projects across <b>Networking</b>, <b>Cybersecurity</b>, and <b>Python Automation</b>.</p>
-    <div class="hero-actions"><a class="btn primary" href="#projects">Explore My Work <span>↓</span></a><a class="btn ghost" href="#contact">Get In Touch ↗</a></div>
-    <div class="quick-stats"><div><strong>01</strong><small>Publication<br>SINTA 3</small></div><div><strong>06</strong><small>Portfolio<br>Projects</small></div><div><strong>∞</strong><small>Continuous<br>Learning</small></div></div>
-  </div>
-  <div class="hero-visual reveal delay">
-    <div class="orb orb1"></div><div class="orb orb2"></div>
-    <div class="terminal-window tilt">
-      <div class="term-head"><span></span><span></span><span></span><b>gilang@portfolio:~</b></div>
-      <div class="term-body">
-        <p><i>$</i> whoami</p><strong>Muchamad Gilang Dwi Saputra</strong>
-        <p><i>$</i> cat focus.txt</p><ul><li>NETWORKING</li><li>CYBERSECURITY</li><li>PYTHON AUTOMATION</li></ul>
-        <p><i>$</i> status</p><strong class="online">● BUILDING THE FUTURE...</strong>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#home" class="brand"><span>MG</span> Portfolio</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> Professional Portfolio</div>
+        <h1>Muchamad Gilang<br><span>Dwi Saputra, S.Kom.</span></h1>
+        <p class="hero-role">Network Engineering <i></i> Network Security <i></i> Cybersecurity</p>
+        <p class="hero-desc">Building practical capabilities across network infrastructure, security, IT operations, and technology-driven problem solving.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#experience">Explore Experience <span>↘</span></a>
+          <a class="btn ghost" href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+        <div class="quick-stats">
+          <div><strong>03</strong><span>Focus Areas</span></div>
+          <div><strong>2025</strong><span>Internship & Leadership</span></div>
+          <div><strong>∞</strong><span>Continuous Learning</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="profile-frame">
+          <div class="profile-top">NETWORK • SECURITY • CYBERSECURITY</div>
+          <img src="assets/profile.png" alt="Muchamad Gilang Dwi Saputra" />
+          <div class="profile-bottom">
+            <span>PORTFOLIO / 2026</span><b>MGDS</b>
+          </div>
+        </div>
+        <div class="floating-card card-one">⚡<br><span>IT<br>OPERATIONS</span></div>
+        <div class="floating-card card-two">◈<br><span>SECURITY<br>FOCUS</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head reveal">
+        <span class="kicker">01 / ABOUT</span>
+        <h2>A technical foundation<br>with practical experience.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="glass reveal">
+          <p class="lead">I am focused on the intersection of <b>network infrastructure</b>, <b>network security</b>, and <b>cybersecurity</b>, supported by hands-on exposure to IT operations, troubleshooting, system development, and collaborative technical work.</p>
+          <div class="tags">
+            <span>Networking</span><span>Network Security</span><span>Cybersecurity</span><span>IT Support</span><span>Troubleshooting</span><span>Web Systems</span>
+          </div>
+        </article>
+        <article class="quote-card reveal delay-1">
+          <div class="quote-mark">“</div>
+          <p>Technical growth is strongest when learning is converted into visible work, documented projects, and real problem solving.</p>
+          <span>PROFESSIONAL PRINCIPLE</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <div class="section-head reveal">
+        <span class="kicker">02 / EXPERIENCE</span>
+        <h2>Professional experience<br>in IT operations.</h2>
+      </div>
+
+      <article class="experience-feature reveal">
+        <div class="exp-photo">
+          <img src="assets/internship-work.jpg" alt="IT internship activity" />
+          <div class="photo-label">IT TEAM / SURABAYA</div>
+        </div>
+        <div class="exp-content">
+          <div class="date">JUL 2025 — AUG 2025</div>
+          <h3>PD Taman Satwa<br>Kebun Binatang Surabaya</h3>
+          <p class="position">IT Team — Internship</p>
+          <p>Hands-on internship experience supporting IT activities, network monitoring, router maintenance, troubleshooting, and internal system development.</p>
+          <div class="skill-list">
+            <span>Network Monitoring</span>
+            <span>Router Maintenance</span>
+            <span>IT Support</span>
+            <span>Troubleshooting</span>
+            <span>Web Development</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="photo-grid reveal">
+        <figure><img src="assets/internship-team.jpg" alt="Internship collaboration"><figcaption>IT Team Collaboration</figcaption></figure>
+        <figure><img src="assets/internship-coding.jpg" alt="Coding activity"><figcaption>System Development Activity</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-head reveal">
+        <span class="kicker">03 / FEATURED PROJECT</span>
+        <h2>Employee Management<br>System.</h2>
+      </div>
+
+      <div class="project-panel reveal">
+        <div class="project-top">
+          <div>
+            <span class="mini-kicker">INTERNAL WEB SYSTEM</span>
+            <h3>Role-Based Employee Management</h3>
+          </div>
+          <span class="status-dot">DOCUMENTED PROJECT</span>
+        </div>
+        <p>A web-based employee management system structured around different user roles and access levels.</p>
+
+        <div class="role-flow">
+          <div class="role-card"><span>01</span><strong>Karyawan</strong><small>User access and employee-side services</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="role-card active"><span>02</span><strong>HRD Management</strong><small>Employee data and administrative management</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="role-card"><span>03</span><strong>Direktur</strong><small>Management-level monitoring based on access authority</small></div>
+        </div>
+
+        <div class="project-footer">
+          <div><b>Focus:</b> Role-Based Access • Dashboard • Employee Management</div>
+          <div class="terminal">SYSTEM_READY<span>_</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership" class="section container">
+      <div class="section-head reveal">
+        <span class="kicker">04 / LEADERSHIP</span>
+        <h2>Technical event<br>leadership.</h2>
+      </div>
+
+      <article class="leadership-card reveal">
+        <div class="leadership-image">
+          <img src="assets/workshop-chairman.jpg" alt="Workshop event leadership documentation" />
+          <div class="image-overlay"></div>
+          <div class="event-badge">31<br><small>MAY<br>2025</small></div>
+        </div>
+        <div class="leadership-content">
+          <span class="mini-kicker">LEMBAGA SEMI OTONOM (LSO) KALIBER</span>
+          <h3>Ketua Pelaksana Workshop</h3>
+          <h4>“Ngoding Cerdas Python dengan Clean Code, Secure Code dan AI untuk Produktivitas”</h4>
+          <p>Led the implementation of a technical workshop event, coordinating the execution of the program and supporting collaboration across the organizing team.</p>
+          <div class="leadership-pills">
+            <span>Leadership</span><span>Event Management</span><span>Coordination</span><span>Team Collaboration</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="certificates" class="section container">
+      <div class="section-head reveal">
+        <span class="kicker">05 / CREDENTIALS</span>
+        <h2>Certificates &<br>achievements.</h2>
+      </div>
+
+      <div class="cert-grid">
+        <a class="cert-card reveal" href="assets/cisco-cybersecurity.pdf" target="_blank">
+          <div class="cert-icon">◈</div>
+          <span>CISCO</span>
+          <h3>Introduction to Cybersecurity</h3>
+          <p>Foundation credential in cybersecurity concepts and awareness.</p>
+          <b>VIEW DOCUMENT ↗</b>
+        </a>
+        <a class="cert-card reveal delay-1" href="assets/lso-kaliber.pdf" target="_blank">
+          <div class="cert-icon">✦</div>
+          <span>LSO KALIBER</span>
+          <h3>Organization & Leadership Experience</h3>
+          <p>Documentation of organizational involvement and leadership activity.</p>
+          <b>VIEW DOCUMENT ↗</b>
+        </a>
+        <div class="cert-card achievement reveal delay-2">
+          <img src="assets/cumlaude.jpeg" alt="Academic achievement documentation">
+          <div class="achievement-overlay">
+            <span>ACADEMIC ACHIEVEMENT</span>
+            <h3>Cum Laude</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container documentation">
+      <div class="section-head reveal">
+        <span class="kicker">06 / DOCUMENTATION</span>
+        <h2>Work, events,<br>and technical journey.</h2>
+      </div>
+      <div class="doc-wall reveal">
+        <img src="assets/workshop-chairman.jpg" alt="Workshop">
+        <img src="assets/internship-team.jpg" alt="IT Team">
+        <img src="assets/internship-coding.jpg" alt="Coding">
+        <img src="assets/internship-work.jpg" alt="Internship">
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-inner reveal">
+        <span class="kicker">07 / CONTACT</span>
+        <h2>Let's connect.</h2>
+        <p>Open to professional opportunities, collaboration, technical projects, and continuous learning.</p>
+        <div class="contact-links">
+          <a href="mailto:gilangdwisaputra63@gmail.com">Email ↗</a>
+          <a href="https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.instagram.com/muchamad_gilang_dwi_saputra" target="_blank" rel="noreferrer">Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Muchamad Gilang Dwi Saputra, S.Kom.</span>
+      <span>Built as a living professional portfolio.</span>
     </div>
-    <div class="floating-card card-a">NETWORK<br><b>TCP/IP · VLAN · ROUTING</b></div>
-    <div class="floating-card card-b">SECURITY<br><b>HASHING · LOGS · LINUX</b></div>
-    <div class="hero-ring">MGDS · PORTFOLIO · 2026 · MGDS · PORTFOLIO · 2026 · </div>
-  </div>
-</section>
+  </footer>
 
-<section id="about" class="section about">
-  <div class="section-label reveal">01 <span></span> ABOUT ME</div>
-  <div class="about-layout">
-    <div class="big-number reveal">01</div>
-    <div class="reveal"><h2>Turning <em>curiosity</em> into practical technical work.</h2></div>
-    <div class="about-text reveal delay"><p>Saya adalah mahasiswa Informatika yang membangun fondasi teknis melalui pembelajaran terstruktur, penelitian, kepemimpinan organisasi, dan project hands-on.</p><p>Fokus utama saya berada pada infrastruktur jaringan, keamanan sistem, serta otomasi menggunakan Python. Saya percaya kemampuan teknis harus dapat dibuktikan melalui <b>project, dokumentasi, dan hasil yang terukur</b>.</p><a href="#experience" class="text-link">MORE ABOUT MY JOURNEY <span>→</span></a></div>
-  </div>
-</section>
-
-<section id="skills" class="section dark-section">
- <div class="section-label reveal">02 <span></span> TECHNICAL STACK</div>
- <div class="section-title reveal"><h2>What I'm <em>building with.</em></h2><p>Fokus kemampuan yang terus dikembangkan melalui praktik dan project.</p></div>
- <div class="skills-grid">
-  <article class="skill-card reveal"><div class="skill-icon">◈</div><span>01</span><h3>Networking</h3><p>TCP/IP, IP Addressing, Subnetting, VLAN, Routing Fundamentals, Network Troubleshooting.</p><div class="tags"><b>TCP/IP</b><b>VLAN</b><b>Subnetting</b><b>Packet Tracer</b></div></article>
-  <article class="skill-card reveal delay"><div class="skill-icon">◉</div><span>02</span><h3>Cybersecurity</h3><p>Password security, hashing concepts, Linux fundamentals, log analysis, security awareness.</p><div class="tags"><b>Linux</b><b>Hashing</b><b>Logs</b><b>Security</b></div></article>
-  <article class="skill-card reveal delay2"><div class="skill-icon">⌘</div><span>03</span><h3>Python</h3><p>CLI tools, automation, JSON, file handling, validation, error handling, practical scripting.</p><div class="tags"><b>Python</b><b>Automation</b><b>CLI</b><b>JSON</b></div></article>
-  <article class="skill-card reveal delay3"><div class="skill-icon">◫</div><span>04</span><h3>Tooling</h3><p>GitHub, Linux, Kali Linux, Ubuntu, Cisco Packet Tracer, VirtualBox.</p><div class="tags"><b>Git</b><b>Ubuntu</b><b>Kali</b><b>VirtualBox</b></div></article>
- </div>
-</section>
-
-<section id="building" class="section building">
- <div class="section-label reveal">03 <span></span> CURRENTLY BUILDING</div>
- <div class="building-head reveal"><h2>Learning by <em>shipping.</em></h2><p>Portfolio ini akan berkembang seiring project diselesaikan dan dipublikasikan.</p></div>
- <div class="build-list">
-  <div class="build-row reveal"><div class="build-no">01</div><div><h3>Password Strength Analyzer</h3><p>Python security tool untuk mengevaluasi kekuatan password dan memberikan rekomendasi.</p></div><div class="progress"><span style="width:45%"></span></div><b class="status build">BUILDING</b></div>
-  <div class="build-row reveal"><div class="build-no">02</div><div><h3>Network Information Tool</h3><p>Tool untuk menampilkan informasi sistem dan jaringan secara terstruktur.</p></div><div class="progress"><span style="width:20%"></span></div><b class="status plan">PLANNED</b></div>
-  <div class="build-row reveal"><div class="build-no">03</div><div><h3>Subnet Calculator Pro</h3><p>Kalkulator IPv4/CIDR untuk network, broadcast, dan usable hosts.</p></div><div class="progress"><span style="width:10%"></span></div><b class="status plan">PLANNED</b></div>
- </div>
-</section>
-
-<section id="projects" class="section projects dark-section">
- <div class="section-label reveal">04 <span></span> FEATURED PROJECTS</div>
- <div class="project-head reveal"><h2>Proof of <em>work.</em></h2><a class="text-link" href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">VIEW GITHUB ↗</a></div>
- <div class="projects-grid">
-  <article class="project-card featured reveal"><div class="project-top"><span>PROJECT 01</span><a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">↗</a></div><div class="project-art lock">⌁</div><div class="project-info"><b>SECURITY TOOL</b><h3>Password Strength Analyzer</h3><p>Analisis kekuatan password dengan pendekatan policy-based dan rekomendasi peningkatan keamanan.</p><div class="tags"><span>PYTHON</span><span>SECURITY</span><span>CLI</span></div></div><div class="card-status">● BUILDING</div></article>
-  <article class="project-card reveal delay"><div class="project-top"><span>PROJECT 02</span><a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">↗</a></div><div class="project-art net">◌</div><div class="project-info"><b>NETWORKING</b><h3>Network Information Tool</h3><p>Pengumpulan dan penyajian informasi dasar sistem dan konektivitas jaringan.</p><div class="tags"><span>PYTHON</span><span>NETWORK</span></div></div><div class="card-status muted">○ PLANNED</div></article>
-  <article class="project-card reveal delay2"><div class="project-top"><span>PROJECT 03</span><a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">↗</a></div><div class="project-art calc">⌗</div><div class="project-info"><b>NETWORK TOOL</b><h3>Subnet Calculator Pro</h3><p>Kalkulasi alamat IPv4 dan CIDR untuk kebutuhan pembelajaran jaringan.</p><div class="tags"><span>PYTHON</span><span>SUBNETTING</span></div></div><div class="card-status muted">○ PLANNED</div></article>
-  <article class="project-card reveal"><div class="project-top"><span>PROJECT 04</span><a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">↗</a></div><div class="project-art monitor">⌁</div><div class="project-info"><b>NOC / MONITORING</b><h3>Connectivity Monitor</h3><p>Monitoring status koneksi, latency, timestamp, dan logging sederhana.</p><div class="tags"><span>PYTHON</span><span>MONITORING</span></div></div><div class="card-status muted">○ PLANNED</div></article>
-  <article class="project-card reveal delay"><div class="project-top"><span>PROJECT 05</span><a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">↗</a></div><div class="project-art hash">#</div><div class="project-info"><b>CYBERSECURITY</b><h3>File Integrity Monitor</h3><p>Baseline hash untuk membantu mendeteksi perubahan pada file yang dipantau.</p><div class="tags"><span>PYTHON</span><span>SHA-256</span></div></div><div class="card-status muted">○ PLANNED</div></article>
-  <article class="project-card reveal delay2"><div class="project-top"><span>PROJECT 06</span><a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">↗</a></div><div class="project-art log">▤</div><div class="project-info"><b>LOG ANALYSIS</b><h3>Security Log Analyzer</h3><p>Analisis event log untuk mengidentifikasi pola dan ringkasan aktivitas keamanan.</p><div class="tags"><span>PYTHON</span><span>LOGS</span></div></div><div class="card-status muted">○ PLANNED</div></article>
- </div>
-</section>
-
-<section id="experience" class="section experience">
- <div class="section-label reveal">05 <span></span> EXPERIENCE & ACHIEVEMENT</div>
- <div class="experience-grid">
-  <div class="exp-intro reveal"><h2>Beyond the <em>classroom.</em></h2><p>Pengalaman organisasi, kepemimpinan, kegiatan teknologi, dan publikasi ilmiah.</p></div>
-  <div class="timeline">
-   <article class="timeline-item reveal"><span>2025</span><div><b>LEADERSHIP</b><h3>Ketua Bidang Informasi dan Kerjasama</h3><h4>LSO KALIBER — Fakultas Teknik, Universitas Muhammadiyah Malang</h4><p>Memimpin dan mengkoordinasikan 6 anggota, mengelola publikasi digital, membangun kerja sama eksternal, serta mendukung pelaksanaan program kerja organisasi.</p><div class="mini-tags"><span>LEADERSHIP</span><span>COLLABORATION</span><span>COMMUNICATION</span></div></div></article>
-   <article class="timeline-item reveal"><span>2025</span><div><b>EVENT LEADERSHIP</b><h3>Ketua Pelaksana Workshop Python</h3><h4>“Ngoding Cerdas Bareng Python dengan Clean Code, Secure Code dan AI untuk Produktivitas”</h4><p>Mengoordinasikan kepanitiaan, pemateri, peserta, publikasi, dan pihak eksternal untuk workshop yang diikuti 50 peserta.</p><div class="mini-tags"><span>PROJECT MANAGEMENT</span><span>PYTHON</span><span>SECURE CODE</span></div></div></article>
-   <article class="timeline-item reveal"><span>2025</span><div><b>PUBLICATION</b><h3>Artikel Ilmiah pada Jurnal Nasional Terakreditasi SINTA 3</h3><p>Terlibat dalam proses penelitian, pengumpulan dan analisis data, penyusunan naskah ilmiah, serta penyempurnaan artikel hingga tahap publikasi.</p><div class="mini-tags"><span>RESEARCH</span><span>DATA ANALYSIS</span><span>SCIENTIFIC WRITING</span></div></div></article>
-  </div>
- </div>
-</section>
-
-<section class="cta-section">
- <div class="cta-glow"></div><p class="reveal">LET'S BUILD SOMETHING USEFUL</p><h2 class="reveal">Open to <em>learning, collaboration,</em><br>and new technical challenges.</h2><a class="btn primary reveal" href="#contact">START A CONVERSATION ↗</a>
-</section>
-
-<section id="contact" class="section contact">
- <div class="section-label reveal">06 <span></span> CONTACT</div>
- <div class="contact-grid"><div class="reveal"><h2>Let's <em>connect.</em></h2><p>Untuk diskusi, kolaborasi, atau peluang profesional, hubungi saya melalui platform berikut.</p></div>
- <div class="contact-links reveal delay">
-  <a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener"><span>01</span><b>GitHub</b><i>↗</i></a>
-  <a href="https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/" target="_blank" rel="noopener"><span>02</span><b>LinkedIn</b><i>↗</i></a>
-  <a href="https://www.instagram.com/muchamad_gilang_dwi_saputra" target="_blank" rel="noopener"><span>03</span><b>Instagram</b><i>↗</i></a>
-  <a href="mailto:gilangdwisaputra63@gmail.com"><span>04</span><b>Email</b><i>↗</i></a>
- </div></div>
-</section>
-</main>
-<footer><div class="footer-logo">MG<span>.</span></div><p>© <span id="year"></span> MUCHAMAD GILANG DWI SAPUTRA</p><a href="#top">BACK TO TOP ↑</a></footer>
-<button id="backTop" aria-label="Kembali ke atas">↑</button>
-<script src="script.js"></script>
-</body></html>
+  <script src="script.js"></script>
+</body>
+</html>
