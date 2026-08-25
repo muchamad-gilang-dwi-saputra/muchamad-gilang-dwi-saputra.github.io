@@ -1,22 +1,24 @@
-# Muchamad Gilang Dwi Saputra, S.Kom. — Portfolio V3
+# Portfolio V3 — Muchamad Gilang Dwi Saputra, S.Kom.
 
-Professional portfolio focused on:
-- Network Engineering
-- Network Security
-- Cybersecurity
+## Main files
+- index.html
+- style.css
+- script.js
 
-## Update this portfolio on GitHub Pages
-1. Open repository `muchamad-gilang-dwi-saputra.github.io`
-2. Upload/replace `index.html`, `style.css`, `script.js`
-3. Upload the entire `assets` folder
-4. Commit changes
-5. Wait for GitHub Pages deployment
+## Image folders
+- assets/profile/profile.jpg
+- assets/experience/internship-1.jpg
+- assets/experience/internship-2.jpg
+- assets/experience/internship-3.jpg
+- assets/projects/employee-system-1.jpg
+- assets/projects/employee-system-2.jpg
+- assets/projects/employee-system-3.jpg
+- assets/projects/employee-system-4.jpg
+- assets/projects/employee-system-5.jpg
+- assets/projects/employee-system-6.jpg
+- assets/leadership/workshop-leader.jpg
 
-## Main sections
-- About
-- IT Internship Experience
-- Employee Management System
-- Leadership Experience
-- Certificates & Achievements
-- Documentation
-- Contact
+The portfolio intentionally does NOT include a Cum Laude section.
+
+## GitHub Pages
+Upload the files while preserving the folder structure. GitHub Pages should publish from the main branch root.
