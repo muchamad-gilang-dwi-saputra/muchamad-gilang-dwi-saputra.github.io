@@ -2,198 +2,834 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional portfolio of Muchamad Gilang Dwi Saputra, S.Kom. — Network Engineering, Network Security, Cybersecurity." />
-  <title>Muchamad Gilang Dwi Saputra, S.Kom. | Portfolio</title>
-
-  <!-- Tailwind CSS CDN: easy to maintain, no build step -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    name="description"
+    content="Professional portfolio of Muchamad Gilang Dwi Saputra, S.Kom. — Network Engineering, Network Security, Cybersecurity."
+  />
+  <title>
+    Muchamad Gilang Dwi Saputra, S.Kom. | Portfolio
+  </title>
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: { ink:'#08111f', panel:'#0d192b', line:'#20324a', electric:'#42b8ff', cyan:'#64e4ff' },
-          boxShadow: { glow:'0 0 0 1px rgba(66,184,255,.15), 0 24px 80px rgba(0,0,0,.35)' }
+          colors: {
+            ink: '#08111f',
+            panel: '#0d192b',
+            line: '#20324a',
+            electric: '#42b8ff',
+            cyan: '#64e4ff'
+          },
+          boxShadow: {
+            glow:
+              '0 0 0 1px rgba(66,184,255,.15), 0 24px 80px rgba(0,0,0,.35)'
+          }
         }
       }
     }
   </script>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="bg-ink text-slate-100 antialiased overflow-x-hidden">
-
-<!-- ambient background -->
+<!-- =========================
+     BACKGROUND
+========================= -->
 <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
-  <div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
   <div class="grid-bg"></div>
 </div>
-
-<header class="fixed top-0 inset-x-0 z-40 border-b border-white/5 bg-ink/70 backdrop-blur-xl">
-  <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5">
-    <a href="#home" class="flex items-center gap-3 font-bold tracking-tight">
-      <span class="grid h-10 w-10 place-items-center rounded-xl border border-electric/30 bg-electric/10 text-electric">MG</span>
-      <span>GILANG<span class="text-electric">.</span></span>
+<!-- =========================
+     NAVIGATION
+========================= -->
+<header
+  class="fixed top-0 inset-x-0 z-40 border-b border-white/5 bg-ink/70 backdrop-blur-xl"
+>
+  <div
+    class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5"
+  >
+    <!-- Logo -->
+    <a
+      href="#home"
+      class="flex items-center gap-3 font-bold tracking-tight"
+    >
+      <span
+        class="grid h-10 w-10 place-items-center rounded-xl border border-electric/30 bg-electric/10 text-electric"
+      >
+        MG
+      </span>
+      <span>
+        GILANG
+        <span class="text-electric">.</span>
+      </span>
     </a>
-    <nav class="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex">
-      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
-      <a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+    <!-- Desktop Navigation -->
+    <nav
+      class="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex"
+    >
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a href="#contact" class="hidden rounded-xl border border-electric/30 bg-electric/10 px-4 py-2 text-sm font-semibold text-electric transition hover:bg-electric hover:text-ink sm:block">Let's Connect</a>
-    <button id="menuBtn" class="rounded-lg border border-white/10 p-2 lg:hidden" aria-label="Menu">☰</button>
+    <!-- Contact Button -->
+    <a
+      href="#contact"
+      class="hidden rounded-xl border border-electric/30 bg-electric/10 px-4 py-2 text-sm font-semibold text-electric transition hover:bg-electric hover:text-ink sm:block"
+    >
+      Let's Connect
+    </a>
+    <!-- Mobile Menu -->
+    <button
+      id="menuBtn"
+      class="rounded-lg border border-white/10 p-2 lg:hidden"
+      aria-label="Menu"
+    >
+      ☰
+    </button>
   </div>
-  <div id="mobileMenu" class="hidden border-t border-white/5 bg-ink px-5 py-4 lg:hidden">
-    <div class="mx-auto grid max-w-7xl gap-4 text-sm text-slate-300">
-      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+  <!-- Mobile Navigation -->
+  <div
+    id="mobileMenu"
+    class="hidden border-t border-white/5 bg-ink px-5 py-4 lg:hidden"
+  >
+    <div
+      class="mx-auto grid max-w-7xl gap-4 text-sm text-slate-300"
+    >
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </header>
-
 <main>
-<section id="home" class="relative pt-32 pb-16 sm:pt-40 sm:pb-24">
-  <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-[1.2fr_.8fr]">
+<!-- =========================
+     HERO
+========================= -->
+<section
+  id="home"
+  class="relative pt-32 pb-16 sm:pt-40 sm:pb-24"
+>
+  <div
+    class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-[1.2fr_.8fr]"
+  >
+    <!-- Hero Text -->
     <div>
-      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-electric/20 bg-electric/5 px-3 py-1.5 text-xs font-bold tracking-[.14em] text-electric">
-        <span class="h-1.5 w-1.5 rounded-full bg-cyan animate-pulse"></span> AVAILABLE FOR PROFESSIONAL OPPORTUNITIES
+      <div
+        class="mb-6 inline-flex items-center gap-2 rounded-full border border-electric/20 bg-electric/5 px-3 py-1.5 text-xs font-bold tracking-[.14em] text-electric"
+      >
+        <span
+          class="h-1.5 w-1.5 rounded-full bg-cyan animate-pulse"
+        ></span>
+        AVAILABLE FOR PROFESSIONAL OPPORTUNITIES
       </div>
-      <p class="mb-5 text-sm font-semibold tracking-[.2em] text-slate-400">PROFESSIONAL PORTFOLIO · 2026</p>
-      <h1 class="max-w-4xl text-5xl font-black leading-[.95] tracking-[-.06em] sm:text-6xl lg:text-8xl">
-        Muchamad Gilang<br><span class="text-gradient">Dwi Saputra, S.Kom.</span>
-      </h1>
-      <div class="mt-7 flex flex-wrap gap-2">
-        <span class="tag">Network Engineering</span><span class="tag">Network Security</span><span class="tag">Cybersecurity</span>
-      </div>
-      <p class="mt-7 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
-        Technology professional focused on network infrastructure, information security, practical IT systems, and continuous technical development.
+      <p
+        class="mb-5 text-sm font-semibold tracking-[.2em] text-slate-400"
+      >
+        PROFESSIONAL PORTFOLIO · 2026
       </p>
-      <div class="mt-9 flex flex-wrap gap-3">
-        <a href="#projects" class="btn-primary">Explore Portfolio <span>↗</span></a>
-        <a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener" class="btn-secondary">View GitHub</a>
+      <h1
+        class="max-w-4xl text-5xl font-black leading-[.95] tracking-[-.06em] sm:text-6xl lg:text-8xl"
+      >
+        Muchamad Gilang
+        <br>
+        <span class="text-gradient">
+          Dwi Saputra, S.Kom.
+        </span>
+      </h1>
+      <!-- Specialization -->
+      <div class="mt-7 flex flex-wrap gap-2">
+        <span class="tag">
+          Network Engineering
+        </span>
+        <span class="tag">
+          Network Security
+        </span>
+        <span class="tag">
+          Cybersecurity
+        </span>
       </div>
-      <div class="mt-12 grid max-w-2xl grid-cols-3 gap-3">
-        <div class="metric"><strong>IT</strong><span>Experience</span></div>
-        <div class="metric"><strong>RBAC</strong><span>Documented System</span></div>
-        <div class="metric"><strong>SEC</strong><span>Career Focus</span></div>
+      <p
+        class="mt-7 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg"
+      >
+        Technology professional focused on network infrastructure,
+        information security, practical IT systems, and continuous
+        technical development.
+      </p>
+      <!-- Buttons -->
+      <div class="mt-9 flex flex-wrap gap-3">
+        <a
+          href="#projects"
+          class="btn-primary"
+        >
+          Explore Portfolio
+          <span>↗</span>
+        </a>
+        <a
+          href="https://github.com/muchamad-gilang-dwi-saputra"
+          target="_blank"
+          rel="noopener"
+          class="btn-secondary"
+        >
+          View GitHub
+        </a>
+      </div>
+      <!-- Metrics -->
+      <div
+        class="mt-12 grid max-w-2xl grid-cols-3 gap-3"
+      >
+        <div class="metric">
+          <strong>IT</strong>
+          <span>
+            Experience
+          </span>
+        </div>
+        <div class="metric">
+          <strong>RBAC</strong>
+          <span>
+            Documented System
+          </span>
+        </div>
+        <div class="metric">
+          <strong>SEC</strong>
+          <span>
+            Career Focus
+          </span>
+        </div>
       </div>
     </div>
-
-    <div class="relative mx-auto w-full max-w-md">
-      <div class="absolute -inset-8 rounded-[3rem] bg-electric/10 blur-3xl"></div>
-      <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-panel/70 p-3 shadow-glow">
-        <img src="assets/profile.jpg" alt="Muchamad Gilang Dwi Saputra" class="aspect-[4/5] w-full rounded-[1.5rem] object-cover object-center">
-        <div class="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/10 bg-ink/80 p-4 backdrop-blur-xl">
-          <p class="text-xs font-bold tracking-[.16em] text-electric">PROFESSIONAL FOCUS</p>
-          <p class="mt-1 text-sm font-semibold">Infrastructure · Security · Networking</p>
+    <!-- Profile Photo -->
+    <div
+      class="relative mx-auto w-full max-w-md"
+    >
+      <div
+        class="absolute -inset-8 rounded-[3rem] bg-electric/10 blur-3xl"
+      ></div>
+      <div
+        class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-panel/70 p-3 shadow-glow"
+      >
+        <img
+          src="assets/profile.jpg"
+          alt="Muchamad Gilang Dwi Saputra"
+          class="aspect-[4/5] w-full rounded-[1.5rem] object-cover object-center"
+        >
+        <div
+          class="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/10 bg-ink/80 p-4 backdrop-blur-xl"
+        >
+          <p
+            class="text-xs font-bold tracking-[.16em] text-electric"
+          >
+            PROFESSIONAL FOCUS
+          </p>
+          <p
+            class="mt-1 text-sm font-semibold"
+          >
+            Infrastructure · Security · Networking
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<section id="about" class="border-y border-white/5 bg-white/[.02] py-20 sm:py-28">
-  <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.8fr_1.2fr]">
-    <div><p class="section-kicker">01 — PROFILE</p><h2 class="section-title">Built around practical technical growth.</h2></div>
+<!-- =========================
+     ABOUT
+========================= -->
+<section
+  id="about"
+  class="border-y border-white/5 bg-white/[.02] py-20 sm:py-28"
+>
+  <div
+    class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.8fr_1.2fr]"
+  >
     <div>
-      <p class="text-xl leading-9 text-slate-300 sm:text-2xl">A portfolio structured around real experience, documented work, technical interests, and evidence of continuous learning.</p>
-      <div class="mt-8 flex flex-wrap gap-2">
-        <span class="skill">Networking</span><span class="skill">Network Security</span><span class="skill">Cybersecurity</span><span class="skill">Linux</span><span class="skill">Python</span><span class="skill">Information Systems</span><span class="skill">Git & GitHub</span>
+      <p class="section-kicker">
+        01 — PROFILE
+      </p>
+      <h2 class="section-title">
+        Built around practical technical growth.
+      </h2>
+    </div>
+    <div>
+      <p
+        class="text-xl leading-9 text-slate-300 sm:text-2xl"
+      >
+        A portfolio structured around real experience,
+        documented work, technical interests, and evidence
+        of continuous learning.
+      </p>
+      <div
+        class="mt-8 flex flex-wrap gap-2"
+      >
+        <span class="skill">Networking</span>
+        <span class="skill">Network Security</span>
+        <span class="skill">Cybersecurity</span>
+        <span class="skill">Linux</span>
+        <span class="skill">Python</span>
+        <span class="skill">Information Systems</span>
+        <span class="skill">Git & GitHub</span>
       </div>
     </div>
   </div>
 </section>
-
-<section id="experience" class="py-20 sm:py-28">
-  <div class="mx-auto max-w-7xl px-5">
-    <div class="mb-12 max-w-3xl"><p class="section-kicker">02 — EXPERIENCE</p><h2 class="section-title">Professional work with documented context.</h2></div>
-
-    <article class="premium-card mb-8">
-      <div class="grid gap-8 lg:grid-cols-[.85fr_1.15fr]">
+<!-- =========================
+     EXPERIENCE
+========================= -->
+<section
+  id="experience"
+  class="py-20 sm:py-28"
+>
+  <div
+    class="mx-auto max-w-7xl px-5"
+  >
+    <!-- Section Header -->
+    <div
+      class="mb-12 max-w-3xl"
+    >
+      <p class="section-kicker">
+        02 — EXPERIENCE
+      </p>
+      <h2 class="section-title">
+        Professional work with documented context.
+      </h2>
+    </div>
+    <!-- Internship -->
+    <article
+      class="premium-card mb-8"
+    >
+      <div
+        class="grid gap-8 lg:grid-cols-[.85fr_1.15fr]"
+      >
+        <!-- Internship Information -->
         <div class="p-7 sm:p-10">
-          <p class="date">21 JULY 2025 — 21 AUGUST 2025</p>
-          <h3 class="mt-4 text-3xl font-bold tracking-tight">IT Team Intern</h3>
-          <p class="mt-2 text-lg text-electric">PD Taman Satwa Kebun Binatang Surabaya</p>
-          <p class="mt-6 leading-8 text-slate-400">Participated in practical IT activities, technical discussions, system-related work, documentation, and organizational workflows during the internship period.</p>
-          <div class="mt-8 border-t border-white/10 pt-6">
-            <p class="mb-3 text-xs font-bold tracking-[.14em] text-slate-500">HIGHLIGHTS</p>
-            <ul class="space-y-2 text-sm text-slate-300"><li>— IT operational and technical activities</li><li>— System development and testing support</li><li>— Role-based organizational workflow</li><li>— Technical documentation</li></ul>
+          <p class="date">
+            21 JULY 2025 — 21 AUGUST 2025
+          </p>
+          <h3
+            class="mt-4 text-3xl font-bold tracking-tight"
+          >
+            IT Team Intern
+          </h3>
+          <p
+            class="mt-2 text-lg text-electric"
+          >
+            PD Taman Satwa Kebun Binatang Surabaya
+          </p>
+          <p
+            class="mt-6 leading-8 text-slate-400"
+          >
+            Participated in practical IT activities,
+            technical discussions, system-related work,
+            documentation, and organizational workflows
+            during the internship period.
+          </p>
+          <div
+            class="mt-8 border-t border-white/10 pt-6"
+          >
+            <p
+              class="mb-3 text-xs font-bold tracking-[.14em] text-slate-500"
+            >
+              HIGHLIGHTS
+            </p>
+            <ul
+              class="space-y-2 text-sm text-slate-300"
+            >
+              <li>
+                — IT operational and technical activities
+              </li>
+              <li>
+                — System development and testing support
+              </li>
+              <li>
+                — Role-based organizational workflow
+              </li>
+              <li>
+                — Technical documentation
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="grid min-h-[430px] grid-cols-2 gap-2 p-2">
-          <img src="assets/internship-discussion.jpg" alt="IT team discussion" class="gallery-img row-span-2 h-full min-h-[430px]">
-          <img src="assets/internship-work.jpg" alt="Internship activity" class="gallery-img h-full min-h-[210px]">
-          <img src="assets/internship-coding.jpg" alt="Coding activity" class="gallery-img h-full min-h-[210px]">
+        <!-- Internship Gallery -->
+        <div
+          class="grid min-h-[430px] grid-cols-2 gap-2 p-2"
+        >
+          <img
+            src="assets/internship-discussion.jpg"
+            alt="IT team discussion"
+            class="gallery-img row-span-2 h-full min-h-[430px]"
+          >
+          <img
+            src="assets/internship-work.jpg"
+            alt="Internship activity"
+            class="gallery-img h-full min-h-[210px]"
+          >
+          <img
+            src="assets/internship-coding.jpg"
+            alt="Coding activity"
+            class="gallery-img h-full min-h-[210px]"
+          >
         </div>
       </div>
     </article>
-
-    <article class="premium-card">
-      <div class="grid gap-8 lg:grid-cols-[1.15fr_.85fr]">
-        <div class="overflow-hidden rounded-2xl p-2"><img src="assets/workshop-leader.jpg" alt="Workshop leadership documentation" class="h-full min-h-[360px] w-full rounded-xl object-cover gallery-img"></div>
+    <!-- Workshop -->
+    <article
+      class="premium-card"
+    >
+      <div
+        class="grid gap-8 lg:grid-cols-[1.15fr_.85fr]"
+      >
+        <!-- Workshop Photo -->
+        <div
+          class="overflow-hidden rounded-2xl p-2"
+        >
+          <img
+            src="assets/workshop-leader.jpg"
+            alt="Workshop leadership documentation"
+            class="h-full min-h-[360px] w-full rounded-xl object-cover gallery-img"
+          >
+        </div>
+        <!-- Workshop Information -->
         <div class="p-7 sm:p-10">
-          <p class="date">31 MAY 2025 · LSO KALIBER</p>
-          <h3 class="mt-4 text-3xl font-bold tracking-tight">Event Chairman</h3>
-          <p class="mt-4 text-lg leading-8 text-slate-300">Ngoding Cerdas Python dengan Clean Code, Secure Code dan AI untuk Produktivitas</p>
-          <p class="mt-5 text-slate-400">Leadership experience involving event coordination, committee workflow, communication, and execution.</p>
-          <div class="mt-7 flex flex-wrap gap-2"><span class="tag">Leadership</span><span class="tag">Coordination</span><span class="tag">Workshop</span></div>
+          <p class="date">
+            31 MAY 2025 · LSO KALIBER
+          </p>
+          <h3
+            class="mt-4 text-3xl font-bold tracking-tight"
+          >
+            Event Chairman
+          </h3>
+          <p
+            class="mt-4 text-lg leading-8 text-slate-300"
+          >
+            Ngoding Cerdas Python dengan Clean Code,
+            Secure Code dan AI untuk Produktivitas
+          </p>
+          <p
+            class="mt-5 text-slate-400"
+          >
+            Leadership experience involving event coordination,
+            committee workflow, communication, and execution.
+          </p>
+          <div
+            class="mt-7 flex flex-wrap gap-2"
+          >
+            <span class="tag">
+              Leadership
+            </span>
+            <span class="tag">
+              Coordination
+            </span>
+            <span class="tag">
+              Workshop
+            </span>
+          </div>
         </div>
       </div>
     </article>
   </div>
 </section>
-
-<section id="projects" class="border-y border-white/5 bg-white/[.02] py-20 sm:py-28">
-  <div class="mx-auto max-w-7xl px-5">
-    <div class="mb-12 grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
-      <div><p class="section-kicker">03 — FEATURED PROJECT</p><h2 class="section-title">Role-Based Employee Management System</h2></div>
-      <p class="self-end text-lg leading-8 text-slate-400">A documented internal system structured around differentiated organizational roles and access levels, demonstrating role-based workflow and interface separation.</p>
+<!-- =========================
+     PROJECTS
+========================= -->
+<section
+  id="projects"
+  class="border-y border-white/5 bg-white/[.02] py-20 sm:py-28"
+>
+  <div
+    class="mx-auto max-w-7xl px-5"
+  >
+    <!-- Project Header -->
+    <div
+      class="mb-12 grid gap-8 lg:grid-cols-[.8fr_1.2fr]"
+    >
+      <div>
+        <p class="section-kicker">
+          03 — FEATURED PROJECT
+        </p>
+        <h2 class="section-title">
+          Role-Based Employee Management System
+        </h2>
+      </div>
+      <p
+        class="self-end text-lg leading-8 text-slate-400"
+      >
+        A documented internal system structured around
+        differentiated organizational roles and access levels,
+        demonstrating role-based workflow and interface separation.
+      </p>
     </div>
-
-    <div class="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      <div class="role-card"><b>01</b><h3>Karyawan</h3><p>Employee services and access.</p></div>
-      <div class="role-card"><b>02</b><h3>Kepala Departemen</h3><p>Department review workflow.</p></div>
-      <div class="role-card"><b>03</b><h3>HRD Management</h3><p>Administrative management.</p></div>
-      <div class="role-card"><b>04</b><h3>Direktur</h3><p>Oversight and higher access.</p></div>
+    <!-- =========================
+         3 PROJECT DOCUMENTATIONS
+    ========================= -->
+    <div
+      class="grid gap-6 md:grid-cols-2 xl:grid-cols-3"
+    >
+      <!-- PROJECT 01 -->
+      <article
+        class="group overflow-hidden rounded-3xl border border-white/10 bg-panel/70 shadow-glow transition duration-500 hover:-translate-y-2 hover:border-electric/40"
+      >
+        <!-- Image -->
+        <div
+          class="relative overflow-hidden bg-black/30"
+        >
+          <img
+            src="assets/projects/project-1.jpg"
+            alt="Kepala Departemen Dashboard"
+            class="h-64 w-full object-cover object-top transition duration-700 group-hover:scale-105 sm:h-72"
+          >
+          <!-- Number -->
+          <div
+            class="absolute left-5 top-5 rounded-full border border-electric/30 bg-ink/80 px-3 py-1 text-xs font-bold text-electric backdrop-blur"
+          >
+            ROLE 01
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="p-6">
+          <h3
+            class="text-2xl font-bold"
+          >
+            Kepala Departemen
+          </h3>
+          <p
+            class="mt-3 leading-7 text-slate-400"
+          >
+            Interface untuk monitoring dan pengelolaan
+            data izin karyawan berdasarkan departemen
+            dan kewenangan pengguna.
+          </p>
+          <div
+            class="mt-5 flex flex-wrap gap-2"
+          >
+            <span class="tag">
+              Monitoring
+            </span>
+            <span class="tag">
+              Department
+            </span>
+          </div>
+        </div>
+      </article>
+      <!-- PROJECT 02 -->
+      <article
+        class="group overflow-hidden rounded-3xl border border-white/10 bg-panel/70 shadow-glow transition duration-500 hover:-translate-y-2 hover:border-electric/40"
+      >
+        <!-- Image -->
+        <div
+          class="relative overflow-hidden bg-black/30"
+        >
+          <img
+            src="assets/projects/project-2.jpg"
+            alt="HRD Management Dashboard"
+            class="h-64 w-full object-cover object-top transition duration-700 group-hover:scale-105 sm:h-72"
+          >
+          <!-- Number -->
+          <div
+            class="absolute left-5 top-5 rounded-full border border-electric/30 bg-ink/80 px-3 py-1 text-xs font-bold text-electric backdrop-blur"
+          >
+            ROLE 02
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="p-6">
+          <h3
+            class="text-2xl font-bold"
+          >
+            HRD Management
+          </h3>
+          <p
+            class="mt-3 leading-7 text-slate-400"
+          >
+            Interface HRD untuk mengelola administrasi,
+            data izin karyawan, serta melakukan
+            pengelolaan informasi terkait sumber daya manusia.
+          </p>
+          <div
+            class="mt-5 flex flex-wrap gap-2"
+          >
+            <span class="tag">
+              HR Management
+            </span>
+            <span class="tag">
+              Administration
+            </span>
+          </div>
+        </div>
+      </article>
+      <!-- PROJECT 03 -->
+      <article
+        class="group overflow-hidden rounded-3xl border border-white/10 bg-panel/70 shadow-glow transition duration-500 hover:-translate-y-2 hover:border-electric/40"
+      >
+        <!-- Image -->
+        <div
+          class="relative overflow-hidden bg-black/30"
+        >
+          <img
+            src="assets/projects/project-3.jpg"
+            alt="Director Dashboard"
+            class="h-64 w-full object-cover object-top transition duration-700 group-hover:scale-105 sm:h-72"
+          >
+          <!-- Number -->
+          <div
+            class="absolute left-5 top-5 rounded-full border border-electric/30 bg-ink/80 px-3 py-1 text-xs font-bold text-electric backdrop-blur"
+          >
+            ROLE 03
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="p-6">
+          <h3
+            class="text-2xl font-bold"
+          >
+            Direktur
+          </h3>
+          <p
+            class="mt-3 leading-7 text-slate-400"
+          >
+            Dashboard tingkat manajemen untuk monitoring,
+            pengawasan informasi, dan akses terhadap
+            data sistem secara lebih luas.
+          </p>
+          <div
+            class="mt-5 flex flex-wrap gap-2"
+          >
+            <span class="tag">
+              Management
+            </span>
+            <span class="tag">
+              Oversight
+            </span>
+          </div>
+        </div>
+      </article>
     </div>
-
-    <div class="project-layout three-projects">
-      <figure class="project-main"><img src="assets/project-employee.jpg" alt="Employee system interface" class="gallery-img"><figcaption><span>01 / KARYAWAN</span><b>Employee Interface</b></figcaption></figure>
-      <figure><img src="assets/project-hrd.jpg" alt="HRD system interface" class="gallery-img"><figcaption><span>02 / HRD MANAGEMENT</span><b>HRD Interface</b></figcaption></figure>
-      <figure><img src="assets/project-department.jpg" alt="Department head interface" class="gallery-img"><figcaption><span>03 / KEPALA DEPARTEMEN</span><b>Department Head Interface</b></figcaption></figure>
+    <!-- Project Summary -->
+    <div
+      class="mt-10 rounded-3xl border border-white/10 bg-panel/40 p-6 sm:p-8"
+    >
+      <div
+        class="grid gap-6 md:grid-cols-[1fr_auto]"
+      >
+        <div>
+          <p
+            class="text-sm font-bold tracking-[.16em] text-electric"
+          >
+            SYSTEM OVERVIEW
+          </p>
+          <h3
+            class="mt-3 text-2xl font-bold"
+          >
+            Role-Based Access and Workflow Management
+          </h3>
+          <p
+            class="mt-3 max-w-3xl leading-7 text-slate-400"
+          >
+            The system demonstrates how different organizational
+            roles can access different workflows and interfaces
+            based on their responsibilities and authority levels.
+          </p>
+        </div>
+        <div
+          class="flex items-center"
+        >
+          <span class="tag">
+            Internal Web System
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="credentials" class="py-20 sm:py-28">
-  <div class="mx-auto max-w-7xl px-5">
-    <div class="mb-12"><p class="section-kicker">04 — CREDENTIALS</p><h2 class="section-title">Learning with documented evidence.</h2></div>
-    <div class="grid gap-6 lg:grid-cols-2">
-      <article class="credential-card"><div class="overflow-hidden bg-white"><img src="assets/certificate-cisco.jpg" alt="Cisco Introduction to Cybersecurity certificate" class="credential-img"></div><div class="p-6"><p class="text-xs font-bold tracking-[.15em] text-electric">CISCO NETWORKING ACADEMY</p><h3 class="mt-2 text-xl font-bold">Introduction to Cybersecurity</h3><p class="mt-2 text-sm text-slate-400">Foundational cybersecurity learning and certification.</p></div></article>
-      <article class="credential-card"><div class="overflow-hidden bg-white"><img src="assets/certificate-kaliber.jpg" alt="LSO Kaliber certificate" class="credential-img"></div><div class="p-6"><p class="text-xs font-bold tracking-[.15em] text-electric">LSO KALIBER</p><h3 class="mt-2 text-xl font-bold">Organizational Documentation</h3><p class="mt-2 text-sm text-slate-400">Leadership and organizational participation documentation.</p></div></article>
+<!-- =========================
+     CREDENTIALS
+========================= -->
+<section
+  id="credentials"
+  class="py-20 sm:py-28"
+>
+  <div
+    class="mx-auto max-w-7xl px-5"
+  >
+    <div class="mb-12">
+      <p class="section-kicker">
+        04 — CREDENTIALS
+      </p>
+      <h2 class="section-title">
+        Learning with documented evidence.
+      </h2>
+    </div>
+    <div
+      class="grid gap-6 lg:grid-cols-2"
+    >
+      <!-- Cisco -->
+      <article
+        class="credential-card"
+      >
+        <div
+          class="overflow-hidden bg-white"
+        >
+          <img
+            src="assets/certificate-cisco.jpg"
+            alt="Cisco Introduction to Cybersecurity certificate"
+            class="credential-img"
+          >
+        </div>
+        <div class="p-6">
+          <p
+            class="text-xs font-bold tracking-[.15em] text-electric"
+          >
+            CISCO NETWORKING ACADEMY
+          </p>
+          <h3
+            class="mt-2 text-xl font-bold"
+          >
+            Introduction to Cybersecurity
+          </h3>
+          <p
+            class="mt-2 text-sm text-slate-400"
+          >
+            Foundational cybersecurity learning and certification.
+          </p>
+        </div>
+      </article>
+      <!-- Kaliber -->
+      <article
+        class="credential-card"
+      >
+        <div
+          class="overflow-hidden bg-white"
+        >
+          <img
+            src="assets/certificate-kaliber.jpg"
+            alt="LSO Kaliber certificate"
+            class="credential-img"
+          >
+        </div>
+        <div class="p-6">
+          <p
+            class="text-xs font-bold tracking-[.15em] text-electric"
+          >
+            LSO KALIBER
+          </p>
+          <h3
+            class="mt-2 text-xl font-bold"
+          >
+            Organizational Documentation
+          </h3>
+          <p
+            class="mt-2 text-sm text-slate-400"
+          >
+            Leadership and organizational participation documentation.
+          </p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
-
-<section id="contact" class="pb-20 sm:pb-28">
-  <div class="mx-auto max-w-7xl px-5">
+<!-- =========================
+     CONTACT
+========================= -->
+<section
+  id="contact"
+  class="pb-20 sm:pb-28"
+>
+  <div
+    class="mx-auto max-w-7xl px-5"
+  >
     <div class="contact-panel">
-      <div><p class="section-kicker">05 — CONTACT</p><h2 class="mt-4 text-4xl font-black tracking-tight sm:text-6xl">Let's build a professional connection.</h2><p class="mt-5 max-w-2xl text-lg text-slate-400">Open for professional networking, collaboration, technical projects, and career opportunities.</p></div>
-      <div class="grid gap-3 sm:grid-cols-2">
-        <a class="contact-link" href="mailto:gilangdwisaputra63@gmail.com">Email <span>↗</span></a>
-        <a class="contact-link" href="https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
-        <a class="contact-link" href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">GitHub <span>↗</span></a>
-        <a class="contact-link" href="https://www.instagram.com/muchamad_gilang_dwi_saputra" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+      <div>
+        <p class="section-kicker">
+          05 — CONTACT
+        </p>
+        <h2
+          class="mt-4 text-4xl font-black tracking-tight sm:text-6xl"
+        >
+          Let's build a professional connection.
+        </h2>
+        <p
+          class="mt-5 max-w-2xl text-lg text-slate-400"
+        >
+          Open for professional networking, collaboration,
+          technical projects, and career opportunities.
+        </p>
+      </div>
+      <div
+        class="grid gap-3 sm:grid-cols-2"
+      >
+        <a
+          class="contact-link"
+          href="mailto:gilangdwisaputra63@gmail.com"
+        >
+          Email
+          <span>↗</span>
+        </a>
+        <a
+          class="contact-link"
+          href="https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+          <span>↗</span>
+        </a>
+        <a
+          class="contact-link"
+          href="https://github.com/muchamad-gilang-dwi-saputra"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub
+          <span>↗</span>
+        </a>
+        <a
+          class="contact-link"
+          href="https://www.instagram.com/muchamad_gilang_dwi_saputra"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+          <span>↗</span>
+        </a>
       </div>
     </div>
   </div>
 </section>
 </main>
-
-<footer class="border-t border-white/5 py-7 text-center text-sm text-slate-500">© 2026 Muchamad Gilang Dwi Saputra, S.Kom. · Professional Portfolio</footer>
-
-<!-- Image viewer -->
-<div id="viewer" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/90 p-5 backdrop-blur">
-  <button id="viewerClose" class="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full border border-white/15 bg-white/10 text-xl">×</button>
-  <img id="viewerImage" alt="Preview" class="max-h-[90vh] max-w-[95vw] rounded-xl object-contain shadow-2xl">
+<!-- =========================
+     FOOTER
+========================= -->
+<footer
+  class="border-t border-white/5 py-7 text-center text-sm text-slate-500"
+>
+  © 2026 Muchamad Gilang Dwi Saputra, S.Kom.
+  · Professional Portfolio
+</footer>
+<!-- =========================
+     IMAGE VIEWER
+========================= -->
+<div
+  id="viewer"
+  class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/90 p-5 backdrop-blur"
+>
+  <button
+    id="viewerClose"
+    class="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full border border-white/15 bg-white/10 text-xl"
+  >
+    ×
+  </button>
+  <img
+    id="viewerImage"
+    alt="Preview"
+    class="max-h-[90vh] max-w-[95vw] rounded-xl object-contain shadow-2xl"
+  >
 </div>
 <script src="script.js"></script>
 </body>
