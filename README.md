@@ -20,3 +20,7 @@ Upload these directly to the repository root:
 - assets folder
 
 Do not place the project inside another nested folder.
+
+
+## V5.1 update
+The Role-Based Employee Management System gallery now displays exactly 3 screenshots: Karyawan, HRD Management, and Kepala Departemen.
