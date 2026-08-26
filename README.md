@@ -1,29 +1,22 @@
-# Portfolio V4 — Simple Upload Version
+# Portfolio V5 — Premium Professional
 
-This version is intentionally simplified for easy GitHub upload.
+## Design
+A professional dark-tech portfolio built for Network Engineering, Network Security, and Cybersecurity positioning.
 
-## Folder structure
+## Maintenance
+This version is intentionally easy to maintain:
+- `index.html` = content and sections
+- `style.css` = custom visual styling
+- `script.js` = mobile menu + image viewer
+- `assets/` = all images in one folder
 
-```text
-index.html
-style.css
-script.js
-assets/
-  profile.jpg
-  internship-discussion.jpg
-  internship-work.jpg
-  internship-coding.jpg
-  project-employee.jpg
-  project-hrd.jpg
-  project-department.jpg
-  project-1.jpg
-  project-2.jpg
-  project-3.jpg
-  workshop-leader.jpg
-  certificate-cisco.jpg
-  certificate-kaliber.jpg
-```
+Tailwind CSS is loaded via CDN, so no Node.js, npm, or build process is required.
 
-Only one `assets` folder is used. There are no folders inside `assets`.
+## Upload to GitHub Pages
+Upload these directly to the repository root:
+- index.html
+- style.css
+- script.js
+- assets folder
 
-Upload all files and the entire `assets` folder to the root of your GitHub Pages repository.
+Do not place the project inside another nested folder.
