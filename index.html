@@ -1,213 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Muchamad Gilang Dwi Saputra, S.Kom. - Network Engineering, Network Security, and Cybersecurity." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional portfolio of Muchamad Gilang Dwi Saputra, S.Kom.">
   <title>Muchamad Gilang Dwi Saputra, S.Kom. | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="cursor-glow"></div>
-  <div class="noise"></div>
-
-  <nav class="navbar">
-    <a class="brand" href="#home">MG<span>.</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
-    <div class="nav-links" id="navLinks">
+<header class="nav">
+  <div class="container nav-wrap">
+    <a href="#home" class="brand">MGS<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#leadership">Leadership</a>
+      <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">PORTFOLIO / 2026</p>
-        <h1>Muchamad<br><span>Gilang Dwi Saputra, S.Kom.</span></h1>
-        <p class="hero-role">Network Engineering <i></i> Network Security <i></i> Cybersecurity</p>
-        <p class="hero-text">Building practical technical capability through network engineering, security-focused learning, web systems, documentation, and real-world project experience.</p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">Explore Projects <b>↘</b></a>
-          <a href="#contact" class="btn ghost">Contact Me</a>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
-        <div class="profile-frame">
-          <img src="assets/profile/profile.jpg" alt="Muchamad Gilang Dwi Saputra" onerror="this.style.display='none'">
-          <div class="profile-placeholder">UPLOAD<br>PROFILE.JPG</div>
-        </div>
-        <div class="floating-card card-a"><span>FOCUS</span><strong>SECURITY</strong></div>
-        <div class="floating-card card-b"><span>BUILD</span><strong>PROJECTS</strong></div>
-      </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="section-head reveal">
-        <p class="eyebrow">01 / ABOUT</p>
-        <h2>Technical focus with a practical mindset.</h2>
-      </div>
-      <div class="about-grid reveal">
-        <p class="about-main">A portfolio focused on technical growth in <strong>Network Engineering, Network Security, and Cybersecurity</strong>, supported by hands-on system development, infrastructure exposure, documentation, and collaborative experience.</p>
-        <div class="skills-wrap">
-          <span>Networking</span><span>Network Security</span><span>Cybersecurity</span><span>Linux</span>
-          <span>Python</span><span>PHP</span><span>MySQL</span><span>GitHub</span>
-          <span>Web Development</span><span>Technical Documentation</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="section-head reveal">
-        <p class="eyebrow">02 / PROFESSIONAL EXPERIENCE</p>
-        <h2>Internship and real workplace exposure.</h2>
-      </div>
-
-      <article class="experience-card reveal">
-        <div class="experience-meta">
-          <span>JUL 2025 — AUG 2025</span>
-          <span>PD TAMAN SATWA KEBUN BINATANG SURABAYA</span>
-        </div>
-        <div class="experience-content">
-          <div>
-            <h3>IT Team Internship</h3>
-            <p>Practical exposure to information technology operations and internal system work in a professional organizational environment.</p>
-          </div>
-          <ul>
-            <li>Supported IT-related operational activities and technical work.</li>
-            <li>Participated in internal system development and testing activities.</li>
-            <li>Worked with role-based workflows involving employees, HRD, department heads, and management.</li>
-            <li>Produced and supported technical documentation and implementation evidence.</li>
-          </ul>
-        </div>
-
-        <div class="media-grid experience-gallery">
-          <figure><img src="assets/experience/internship-1.jpg" alt="IT internship documentation" onerror="this.style.display='none'"><div class="img-placeholder">INTERNSHIP 01</div></figure>
-          <figure><img src="assets/experience/internship-2.jpg" alt="IT internship documentation" onerror="this.style.display='none'"><div class="img-placeholder">INTERNSHIP 02</div></figure>
-          <figure><img src="assets/experience/internship-3.jpg" alt="IT internship documentation" onerror="this.style.display='none'"><div class="img-placeholder">INTERNSHIP 03</div></figure>
-        </div>
-      </article>
-    </section>
-
-    <section id="projects" class="section projects">
-      <div class="section-head reveal">
-        <p class="eyebrow">03 / DOCUMENTED PROJECTS</p>
-        <h2>Projects backed by implementation evidence.</h2>
-      </div>
-
-      <article class="project-feature reveal">
-        <div class="project-top">
-          <div>
-            <span class="project-number">01</span>
-            <p class="eyebrow">INTERNAL WEB SYSTEM</p>
-            <h3>Role-Based Employee Management System</h3>
-            <p class="project-summary">A web-based employee management and sick leave workflow system structured around different organizational roles and access levels.</p>
-          </div>
-          <div class="project-badges">
-            <span>DOCUMENTED</span><span>ROLE-BASED</span><span>WEB SYSTEM</span>
-          </div>
-        </div>
-
-        <div class="role-grid">
-          <div><small>01</small><h4>Karyawan</h4><p>User access and employee-side services.</p></div>
-          <div><small>02</small><h4>Kepala Departemen</h4><p>Department-level review and approval workflow.</p></div>
-          <div><small>03</small><h4>HRD</h4><p>Employee and administrative management functions.</p></div>
-          <div><small>04</small><h4>Direktur</h4><p>Management-level visibility and oversight.</p></div>
-        </div>
-
-        <div class="project-stack">
-          <span>PHP</span><span>MySQL</span><span>Role-Based Access</span><span>Approval Workflow</span><span>Web Development</span>
-        </div>
-
-        <div class="documentation-title">
-          <div><p class="eyebrow">IMPLEMENTATION EVIDENCE</p><h4>Project Documentation Gallery</h4></div>
-          <span>Click an image to enlarge</span>
-        </div>
-
-        <div class="project-gallery">
-          <figure class="wide"><img src="assets/projects/employee-system-1.jpg" alt="Role-based employee management system documentation 1" onerror="this.style.display='none'"><div class="img-placeholder">PROJECT DOCUMENTATION 01</div></figure>
-          <figure><img src="assets/projects/employee-system-2.jpg" alt="Employee management dashboard documentation" onerror="this.style.display='none'"><div class="img-placeholder">PROJECT DOCUMENTATION 02</div></figure>
-          <figure><img src="assets/projects/employee-system-3.jpg" alt="HRD dashboard documentation" onerror="this.style.display='none'"><div class="img-placeholder">PROJECT DOCUMENTATION 03</div></figure>
-        </div>
-      </article>
-
-      <div class="project-roadmap reveal">
-        <p class="eyebrow">NEXT PORTFOLIO BUILDS</p>
-        <div class="roadmap-grid">
-          <div><b>02</b><h4>Small Office Network</h4><p>Packet Tracer · VLAN · DHCP · DNS · Wi-Fi</p></div>
-          <div><b>03</b><h4>Python Network Tools</h4><p>Automation · Scanning · Monitoring</p></div>
-          <div><b>04</b><h4>Security Lab</h4><p>Linux · Network Analysis · Documentation</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="leadership" class="section">
-      <div class="section-head reveal">
-        <p class="eyebrow">04 / LEADERSHIP EXPERIENCE</p>
-        <h2>Technical leadership beyond the code.</h2>
-      </div>
-
-      <article class="leadership-card reveal">
-        <div class="leadership-copy">
-          <span class="project-number">01</span>
-          <p class="eyebrow">EVENT CHAIR / WORKSHOP LEADER</p>
-          <h3>Ngoding Cerdas Python dengan Clean Code, Secure Code dan AI untuk Produktivitas</h3>
-          <p class="lead-date">31 May 2025 · Lembaga Semi Otonom (LSO) Kaliber</p>
-          <p>Served as the event leader for a technical workshop focused on Python, clean coding practices, secure coding concepts, and the use of AI to support productivity.</p>
-          <div class="lead-tags"><span>Leadership</span><span>Event Management</span><span>Python</span><span>Secure Code</span><span>Technical Workshop</span></div>
-        </div>
-        <figure class="lead-photo"><img src="assets/leadership/workshop-leader.jpg" alt="Workshop leadership documentation" onerror="this.style.display='none'"><div class="img-placeholder">WORKSHOP DOCUMENTATION</div></figure>
-      </article>
-    </section>
-
-    <section id="certificates" class="section certificates">
-      <div class="section-head reveal">
-        <p class="eyebrow">05 / CERTIFICATES</p>
-        <h2>Verified learning and achievements.</h2>
-      </div>
-      <div class="certificate-grid reveal">
-        <article class="certificate-card certificate-photo">
-          <img src="assets/certificates/cisco-introduction-cybersecurity.jpg" alt="Cisco Introduction to Cybersecurity Certificate">
-          <div><span class="certificate-icon">01</span><h4>Introduction to Cybersecurity</h4><p>Cisco Networking Academy certification.</p></div>
-        </article>
-        <article class="certificate-card certificate-photo">
-          <img src="assets/certificates/lso-kaliber.jpg" alt="LSO Kaliber certificate">
-          <div><span class="certificate-icon">02</span><h4>LSO Kaliber Certificate</h4><p>Organizational and leadership documentation.</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact reveal">
-      <p class="eyebrow">06 / CONTACT</p>
-      <h2>Let's connect.</h2>
-      <p>Open to professional networking, technical collaboration, and opportunities in networking and cybersecurity.</p>
-      <div class="contact-links">
-        <a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="https://www.instagram.com/muchamad_gilang_dwi_saputra" target="_blank" rel="noopener">Instagram ↗</a>
-        <a href="mailto:gilangdwisaputra63@gmail.com">Email ↗</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <span>© 2026 Muchamad Gilang Dwi Saputra, S.Kom.</span>
-    <span>NETWORK · SECURITY · CYBERSECURITY</span>
-  </footer>
-
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <button id="closeLightbox" aria-label="Close image">×</button>
-    <img id="lightboxImage" src="" alt="Expanded portfolio documentation">
+    </nav>
   </div>
+</header>
 
-  <script src="script.js"></script>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">PROFESSIONAL PORTFOLIO</p>
+      <h1>Muchamad Gilang<br><span>Dwi Saputra, S.Kom.</span></h1>
+      <p class="hero-role">Network Engineering · Network Security · Cybersecurity</p>
+      <p class="hero-text">A technology professional focused on networking, information security, systems, and practical IT problem-solving.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#experience">View Experience</a>
+        <a class="btn secondary" href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">GitHub Profile</a>
+      </div>
+      <div class="quick-info">
+        <div><strong>IT</strong><span>Professional Experience</span></div>
+        <div><strong>Security</strong><span>Career Focus</span></div>
+        <div><strong>Projects</strong><span>Documented Work</span></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame"><img src="assets/profile.jpg" alt="Muchamad Gilang Dwi Saputra"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container narrow">
+    <p class="eyebrow">ABOUT</p>
+    <h2>Technical capability supported by practical experience.</h2>
+    <p class="lead">My professional interests are centered on network engineering, network security, cybersecurity, Linux, infrastructure, and information systems. This portfolio documents practical work, projects, leadership experience, and continuous technical development.</p>
+    <div class="skills">
+      <span>Networking</span><span>Network Security</span><span>Cybersecurity</span><span>Linux</span><span>Python</span><span>Information Systems</span><span>Git & GitHub</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">EXPERIENCE</p><h2>Professional and leadership experience</h2></div>
+    </div>
+
+    <article class="experience-card">
+      <div class="experience-content">
+        <p class="date">21 JULY 2025 — 21 AUGUST 2025</p>
+        <h3>IT Team Intern</h3>
+        <h4>PD Taman Satwa Kebun Binatang Surabaya</h4>
+        <p>Participated in practical IT activities, technical discussions, system work, and the development and documentation of internal information-system related work.</p>
+        <ul>
+          <li>Supported IT operational and technical activities.</li>
+          <li>Participated in system development and testing activities.</li>
+          <li>Worked with role-based workflows for organizational users.</li>
+          <li>Produced practical documentation from internship activities.</li>
+        </ul>
+      </div>
+      <div class="photo-grid three">
+        <img src="assets/internship-discussion.jpg" alt="IT team discussion" loading="lazy">
+        <img src="assets/internship-work.jpg" alt="Internship work" loading="lazy">
+        <img src="assets/internship-coding.jpg" alt="Coding during internship" loading="lazy">
+      </div>
+    </article>
+
+    <article class="experience-card leadership">
+      <div class="experience-content">
+        <p class="date">31 MAY 2025</p>
+        <h3>Event Chairman</h3>
+        <h4>LSO Kaliber — Workshop Program</h4>
+        <p><strong>Ngoding Cerdas Python dengan Clean Code, Secure Code dan AI untuk Produktivitas.</strong></p>
+        <ul>
+          <li>Led event coordination and execution.</li>
+          <li>Managed committee responsibilities and workflow.</li>
+          <li>Developed practical leadership and communication experience.</li>
+        </ul>
+      </div>
+      <div class="single-photo"><img src="assets/workshop-leader.jpg" alt="Workshop leadership documentation" loading="lazy"></div>
+    </article>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <p class="eyebrow">DOCUMENTED PROJECT</p>
+    <h2>Role-Based Employee Management System</h2>
+    <p class="lead project-intro">A documented internal web system structured around different organizational roles and access levels. The project demonstrates role-based workflow concepts and interface differentiation.</p>
+
+    <div class="roles">
+      <div><b>01</b><h3>Karyawan</h3><p>Employee-side services and access.</p></div>
+      <div><b>02</b><h3>Kepala Departemen</h3><p>Department-level review and approval workflow.</p></div>
+      <div><b>03</b><h3>HRD Management</h3><p>Administrative management and coordination.</p></div>
+      <div><b>04</b><h3>Direktur</h3><p>Higher-level organizational access and oversight.</p></div>
+    </div>
+
+    <div class="project-gallery">
+      <figure><img src="assets/project-employee.jpg" alt="Employee interface" loading="lazy"><figcaption>Employee Interface</figcaption></figure>
+      <figure><img src="assets/project-hrd.jpg" alt="HRD interface" loading="lazy"><figcaption>HRD Interface</figcaption></figure>
+      <figure><img src="assets/project-department.jpg" alt="Department head interface" loading="lazy"><figcaption>Department Head Interface</figcaption></figure>
+      <figure><img src="assets/project-1.jpg" alt="Project documentation" loading="lazy"><figcaption>Project Documentation</figcaption></figure>
+      <figure><img src="assets/project-2.jpg" alt="Project documentation" loading="lazy"><figcaption>Project Documentation</figcaption></figure>
+      <figure><img src="assets/project-3.jpg" alt="Project documentation" loading="lazy"><figcaption>Project Documentation</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="section alt">
+  <div class="container">
+    <p class="eyebrow">CERTIFICATES</p>
+    <h2>Selected credentials and documentation</h2>
+    <div class="certificate-grid">
+      <article><img src="assets/certificate-cisco.jpg" alt="Cisco Introduction to Cybersecurity certificate" loading="lazy"><div><h3>Introduction to Cybersecurity</h3><p>Cisco Networking Academy</p></div></article>
+      <article><img src="assets/certificate-kaliber.jpg" alt="LSO Kaliber certificate" loading="lazy"><div><h3>Organizational Documentation</h3><p>LSO Kaliber</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-box">
+    <div><p class="eyebrow">CONTACT</p><h2>Let's connect professionally.</h2><p>For professional networking, collaboration, projects, and career opportunities.</p></div>
+    <div class="contact-links">
+      <a href="mailto:gilangdwisaputra63@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/muchamad-gilang-dwi-saputra-1b7766337/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/muchamad-gilang-dwi-saputra" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.instagram.com/muchamad_gilang_dwi_saputra" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container">© 2026 Muchamad Gilang Dwi Saputra, S.Kom. — Professional Portfolio</div></footer>
+
+<div class="lightbox" id="lightbox"><button id="closeLightbox" aria-label="Close">×</button><img id="lightboxImg" alt=""></div>
+<script src="script.js"></script>
 </body>
 </html>

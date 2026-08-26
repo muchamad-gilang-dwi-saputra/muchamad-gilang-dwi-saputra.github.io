@@ -1,9 +1,29 @@
-# Muchamad Gilang Dwi Saputra, S.Kom. — Portfolio
+# Portfolio V4 — Simple Upload Version
 
-Portfolio website with the actual provided profile, internship, project, leadership, and certificate images already placed in the `assets` folder.
+This version is intentionally simplified for easy GitHub upload.
 
-## Important
-Upload the **contents** of this folder to the root of:
-`muchamad-gilang-dwi-saputra.github.io`
+## Folder structure
 
-Do not upload the ZIP itself to GitHub Pages.
+```text
+index.html
+style.css
+script.js
+assets/
+  profile.jpg
+  internship-discussion.jpg
+  internship-work.jpg
+  internship-coding.jpg
+  project-employee.jpg
+  project-hrd.jpg
+  project-department.jpg
+  project-1.jpg
+  project-2.jpg
+  project-3.jpg
+  workshop-leader.jpg
+  certificate-cisco.jpg
+  certificate-kaliber.jpg
+```
+
+Only one `assets` folder is used. There are no folders inside `assets`.
+
+Upload all files and the entire `assets` folder to the root of your GitHub Pages repository.
